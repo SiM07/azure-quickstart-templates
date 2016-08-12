@@ -147,7 +147,7 @@ function get_sshkeys()
     fi
 
     # Install Python Azure Storage SDK
-    pip install azure-storage
+    pip install azure-storage==0.32.0
 
     # Download Public Key
     python GetSSHFromPrivateStorageAccount.py  ${SSH_AZ_ACCOUNT_NAME} ${SSH_AZ_ACCOUNT_KEY} id_rsa.pub

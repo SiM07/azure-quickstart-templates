@@ -191,7 +191,7 @@ function install_ansible_ubuntu()
  function get_sshkeys()
  {
     log "INFO:Retrieving ssh keys from Azure Storage"
-    pip install azure-storage
+    pip install azure-storage==0.32.0
 
     # Download both Private and Public Key
     python GetSSHFromPrivateStorageAccount.py ${SSH_AZ_ACCOUNT_NAME} ${SSH_AZ_ACCOUNT_KEY} id_rsa

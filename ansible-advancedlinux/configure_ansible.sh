@@ -151,8 +151,6 @@ function check_OS()
 
 function install_ansible_ubuntu()
 {
-
-
     apt-get --yes --force-yes install software-properties-common
     apt-add-repository ppa:ansible/ansible
     apt-get --yes --force-yes update
@@ -163,7 +161,8 @@ function install_ansible_ubuntu()
     apt-get --yes --force-yes install git
     # install python
     apt-get --yes --force-yes install python-pip
-
+    # hello world
+    apt-get --yes --force-yes install cowsay
  }
 
  function install_ansible_centos()
